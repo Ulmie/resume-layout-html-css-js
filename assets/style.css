@@ -1,0 +1,473 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: rgba(255,255,255,.4);
+    background: #222;
+    line-height: 1.7;
+    font-size: 16px;
+    font-weight: 300;
+}
+/* ===========HEADER================ */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 35px 0;
+}
+/* =================CONTAINER========== */
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* ============NAVIGATION================ */
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link {
+    list-style: none;
+}
+
+.nav-link a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.nav-link a::selection {
+    background-color: #000;
+    color: #fff;
+}
+/* =========INTRO========================== */
+.intro {
+    background-image: url(	https://preview.colorlib.com/theme/rezume/images/ximage_1.jpg.pagespeed.ic.X2zR0KHyU5.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;;
+    height: 130vh;
+    margin-top: -10vh;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 120vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+}
+
+.intro-content {
+    margin: 35% auto 0;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+
+.intro-suptitle {
+    font-weight: 200;
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.intro-suptitle::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.intro-title {
+    font-family: inherit;
+    font-weight: 800;
+}
+
+.intro-title::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.intro-subtitle {
+    text-transform: uppercase;
+    line-height: 1.7;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .2rem;
+    color: rgba(255,255,255,.5);
+}
+
+.intro-subtitle::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+/* ============PORTFOLIO================== */
+
+.portfolio {
+    padding: 5em 0;
+    background-color: #222;
+}
+
+.section-title {
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.section-title strong {
+    font-weight: 800;
+}
+
+.section-title::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.section-title strong::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.portfolio-nav-links {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 45px 0;
+}
+
+.portfolio-nav-link {
+    list-style: none;
+}
+
+.portfolio-nav-link button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    color: rgba(255,255,255,.4);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    transition: color .2s ease;
+}
+
+.portfolio-nav-link button:hover {
+    color: #bac964;
+}
+
+.portfolio-nav-link button.active {
+    color: #bac964;
+}
+
+.portfolio-nav-link button::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+.portfolio-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+    width: 33.33333%;
+    margin-bottom: 50px;
+    padding: 0 15px;
+}
+
+.portfolio-title {
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    color: #fff;
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+}
+
+.portfolio-subtitle {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ccc;
+    text-align: center;
+}
+
+/* ==============RESUME================= */
+
+.resume {
+    padding: 80px 0;
+}
+
+.resume-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.resume-education,
+.resume-experience {
+    width: 50%;
+}
+
+.resume-education {
+    padding-right: 15px;
+}
+
+.resume-experience {
+    padding-left: 15px;
+}
+
+.resume-heading {
+    margin-bottom: 3rem;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.resume-item {
+    padding: 30px;
+    background: #333;
+    transition: .3s all ease;
+    border: 4px solid transparent;
+    border-radius: 7px;
+    margin-bottom: 1.5rem
+}
+
+.date {
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    display: block;
+}
+
+span.icon-celendar::before {
+    content: "\1F5D3";
+}
+
+.resume-item-title {
+    color: #bac964;
+    font-size: 20px;
+}
+
+.resume-item-text {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+.resume-item-footer {
+    margin-bottom: 0;
+}
+
+/* ========================ABOUT=============== */
+
+.about {
+    padding: 80px 0;
+}
+
+.about-inner {
+    display: flex;
+    align-items: center;
+}
+
+.about-img {
+    padding-right: 3rem;
+    width: 58.33333%;
+}
+
+.about-content {
+    width: 40%;
+    text-align: left;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+}
+
+.section-title-about {
+    text-align: left;
+}
+
+.about-text {
+    font-weight: 200;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.about-subtext {
+    margin-bottom: 3rem;
+}
+
+.about-buttons {
+    display: flex;
+}
+
+.btn-green,
+.btn-gray {
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .2rem;
+    padding: 0.5em 1.5em;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+.btn-green {
+    background-color: #bac964;
+    border-color: #bac964;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.btn-green:hover {
+    background-color: #8d9b3d;
+    border-color: #8d9b3d;
+}
+
+.btn-gray {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-gray:hover {
+    background-color: #4e5459;
+    border-color: #4e5459;
+}
+
+/* =====================TESTIMONIAL================ */
+
+.testimonial {
+    padding: 80px 0;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial-item {
+    width: 50%;
+    display: flex;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.testimonial-img {
+    width: 50px;
+}
+
+.testimonial-img img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.testimonial-content {
+    margin-left: 40px;
+    padding: 30px;
+    background: #333;
+    border-radius: 7px;
+    position: relative;
+}
+
+.testimonial-content::before {
+    content: "";
+    border: 1px solid red;
+    z-index: 200;
+    position: absolute;
+    left: -15px;
+    border-width: 0 20px 20px 0;
+    border-style: solid;
+    border-color: transparent #333 transparent transparent;
+}
+
+.testimonial-text {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.testimonial-autor {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+}
+
+.testimonial-autor a {
+    color: #bac964;
+    text-decoration: none;
+}
+
+.testimonial-item--left {
+    padding-left: 0;
+}
+
+.testimonial-item--right {
+    padding-right: 0;
+}
+
+/* ==================SERVICES============= */
+
+.services {
+    padding: 80px 0;
+}
+
+.services-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
