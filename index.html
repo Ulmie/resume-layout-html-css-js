@@ -8,27 +8,28 @@
 
     <link rel="stylesheet" href="assets/style.css">
 
+    <script src="https://kit.fontawesome.com/89d6422f7e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <nav class="nav">
                 <ul class="nav-links">
                     <li class="nav-link">
-                        <a href="#intro">HOME</a>
+                        <a id="intro-link" href="#intro">HOME</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#portfolio">PORTFOLIO</a>
+                        <a id="portfolio-link" href="#portfolio">PORTFOLIO</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#resume">RESUME</a>
+                        <a id="resume-link" href="#resume">RESUME</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#about">ABOUT</a>
+                        <a id="about-link" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#contact">CONTACT</a>
+                        <a id="contact-link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -55,19 +56,19 @@
             <div class="portfolio-nav">
                 <ul class="portfolio-nav-links">
                     <li class="portfolio-nav-link">
-                        <button class="active" href="#">All</button>
+                        <button onclick="click, foo('All', 0)" class="active" href="#">All</button>
                     </li>
                     <li class="portfolio-nav-link">
-                        <button href="#portfolio">Packaging</button>
+                        <button onclick="click, foo('Packaging', 1)" href="#portfolio">Packaging</button>
                     </li>
                     <li class="portfolio-nav-link">
-                        <button href="#">Mockup</button>
+                        <button onclick="click, foo('Mockup', 2)" href="#">Mockup</button>
                     </li>
                     <li class="portfolio-nav-link">
-                        <button href="#">Typography</button>
+                        <button onclick="click, foo('Typography', 3)" href="#">Typography</button>
                     </li>
                     <li class="portfolio-nav-link">
-                        <button href="#">Photography</button>
+                        <button onclick="click, foo('Photography', 4)" href="#">Photography</button>
                     </li>
                 </ul>
             </div>
@@ -297,7 +298,7 @@
                 </div>
                 <div class="testimonial-item testimonial-item--right">
                     <div class="testimonial-img">
-                        <img src="assets/img/testi1.jpg" alt="testimonia">
+                        <img src="assets/img/testi2.jpg" alt="testimonia">
                     </div>
                     <div class="testimonial-content">
                         <div class="testimonial-text">
@@ -310,7 +311,7 @@
                 </div>
                 <div class="testimonial-item testimonial-item--left">
                     <div class="testimonial-img">
-                        <img src="assets/img/testi1.jpg" alt="testimonia">
+                        <img src="assets/img/testi3.jpg" alt="testimonia">
                     </div>
                     <div class="testimonial-content">
                         <div class="testimonial-text">
@@ -323,7 +324,7 @@
                 </div>
                 <div class="testimonial-item testimonial-item--right">
                     <div class="testimonial-img">
-                        <img src="assets/img/testi1.jpg" alt="testimonia">
+                        <img src="assets/img/testi4.jpg" alt="testimonia">
                     </div>
                     <div class="testimonial-content">
                         <div class="testimonial-text">
@@ -338,24 +339,216 @@
         </div>
     </section>
     <section class="services">
+        <h3 class="section-title">
+            My <strong>Services</strong>
+        </h3>
         <div class="container">
             <div class="services-wrapper">
-                <div class="services-item">
+                <div class="services-item services-item--left">
                     <span class="services-img">
-                        <span class="services-icon"></span>
+                        <img src="assets/img/table.jpg" alt="video" class="services-icon"></img>
                     </span>
                     <div class="services-title">
-
+                        Web Design
                     </div>
                     <div class="services-text">
-
+                        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
                     </div>
-                    <a href="#" class="services-link">
-                        Learn More <i class="services-link-icon"></i>
-                    </a>
+                    <p class="services-link--wrapper">
+                        <a href="#" class="services-link">
+                            Learn More <i class="services-link-icon"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="services-item">
+                    <span class="services-img">
+                        <img src="assets/img/graf.jpg" alt="video" class="services-icon"></img>
+                    </span>
+                    <div class="services-title">
+                        Search Engine Optimization
+                    </div>
+                    <div class="services-text">
+                        A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                    </div>
+                    <p class="services-link--wrapper">
+                        <a href="#" class="services-link">
+                            Learn More <i class="services-link-icon"></i>
+                        </a>
+                    </p>
+                </div>
+                <div class="services-item services-item--right">
+                    <span class="services-img">
+                        <img src="assets/img/video.jpg" alt="video" class="services-icon"></img>
+                    </span>
+                    <div class="services-title">
+                        Video Editing
+                    </div>
+                    <div class="services-text">
+                        Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                    </div>
+                    <p class="services-link--wrapper">  
+                        <a href="#" class="services-link">
+                            Learn More <i class="services-link-icon"></i>
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+    <section class="blog">
+        <h3 class="section-title">
+            Blog on <strong>Medium</strong>
+        </h3>
+        <div class="container">
+            <div class="blog-wrapper">
+                <div class="blog-item blog-item--left">
+                    <div class="blog-photo">
+                        <img src="https://preview.colorlib.com/theme/rezume/images/xpost_1.jpg.pagespeed.ic.1DAtdI1wck.webp" alt="img" class="blog-img">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-title">
+                            Creative Product Designer From Facebook
+                        </div>
+                        <div class="blog-text">
+                            Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+                        </div>
+                        <div class="blog-footer">
+                            <div class="blog-date">
+                                <span class="icon-celendar"></span>
+                                Aug 7, 2018
+                            </div>
+                            <div class="blog-comment">
+                                <span class="icon-comment"></span>
+                                5 Comments
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-photo">
+                        <img src="https://preview.colorlib.com/theme/rezume/images/xpost_2.jpg.pagespeed.ic.wMIXCxQ_OF.webp" alt="img" class="blog-img">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-title">
+                            Creative Product Designer From Facebook
+                        </div>
+                        <div class="blog-text">
+                            Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+                        </div>
+                        <div class="blog-footer">
+                            <div class="blog-date">
+                                <span class="icon-celendar"></span>
+                                Aug 7, 2018
+                            </div>
+                            <div class="blog-comment">
+                                <span class="icon-comment"></span>
+                                5 Comments
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-item blog-item--right">
+                    <div class="blog-photo">
+                        <img src="https://preview.colorlib.com/theme/rezume/images/xpost_3.jpg.pagespeed.ic.-jDB7Q2c_J.webp" alt="img" class="blog-img">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-title">
+                            Creative Product Designer From Facebook
+                        </div>
+                        <div class="blog-text">
+                            Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.
+                        </div>
+                        <div class="blog-footer">
+                            <div class="blog-date">
+                                <span class="icon-celendar"></span>
+                                Aug 7, 2018
+                            </div>
+                            <div class="blog-comment">
+                                <span class="icon-comment"></span>
+                                5 Comments
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="form" id="form" >
+        <h3 class="section-title">
+            Get <strong>In Touch</strong>
+        </h3>
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-place">
+                    <div class="form-heading">
+                        Get In Touch
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-number" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group form-group--textarea">
+                        <textarea class="form-control" cols="30" rows="10" placeholder="Write a Message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="form-btn" value="Send Message">
+                    </div>
+                </div>
+                <div class="form-contact">
+                    <div class="form-heading">
+                        My Contact Details
+                    </div>
+                    <ul class="form-list">
+                        <li>
+                            <span class="form-list-heading">Email</span>
+                            site@gmail.com
+                        </li>
+                        <li>
+                            <span class="form-list-heading">Phone</span>
+                            +30 976 1382 9921
+                        </li>
+                        <li>
+                            <span class="form-list-heading">Fax</span>
+                            +30 976 1382 9922
+                        </li>
+                        <li>
+                            <span class="form-list-heading">Address</span>
+                            San Francisco, CA <br>
+                            4th Floor8 Lower <br>
+                            San Francisco street, M1 50F
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-copiright">
+                <p class="copiright">
+                
+                Copyright © 2022 All rights reserved | This template is made with <i class="copiright-icon" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="footer-copiright-link">Colorlib</a>
+                
+                </p>
+            </div>
+            <div class="footer-links">
+                <div class="social-links">
+                    <p>
+                        <a href="#" class="social-item"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-item"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-item"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-item"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-item"><i class="fa-brands fa-vimeo-v"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/app.js"></script>
 </body>
 </html>
